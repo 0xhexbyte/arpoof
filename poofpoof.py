@@ -8,7 +8,7 @@ def get_input():
 	parser = argparse.ArgumentParser()
 	parser.add_argument("-t", "--target", dest="target_ip", help="Mention the target IP address using -t or --target flag.\n Syntax: python3 poofpoof.py -t 'IP here'")
 	parser.add_argument("-m", "--mac", dest="target_mac", help="Mention the target MAC address using -m or --mac flag.\n Syntax: python3 poofpoof.py -m 'MAC here'")
-	parser.add_argument("-s", "--srcip", dest="spoof_ip", help="Mention the IP address of the source machine, from whom the packet should seem to be coming from using -s or --srcip flag.\n Syntax: python3 poofpoof.py -s 'IP here'")
+	parser.add_argument("-s", "--spoofip", dest="spoof_ip", help="Mention the IP address of the source machine, from whom the packet should seem to be coming from using -s or --spoofip flag.\n Syntax: python3 poofpoof.py -s 'IP here'")
 	options = parser.parse_args()
 	return options
 	
